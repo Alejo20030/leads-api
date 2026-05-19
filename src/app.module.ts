@@ -10,7 +10,7 @@ import { LeadsModule } from './leads/leads.module';
       isGlobal: true,
     }),
 
-    MongooseModule.forRoot(process.env.MONGO_URI),
+    MongooseModule.forRoot(process.env.MONGO_URI!),
 
     LeadsModule,
   ],
